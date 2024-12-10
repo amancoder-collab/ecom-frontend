@@ -37,6 +37,7 @@ export const ProductCard = (props: Props) => {
 					<div className='font-semibold capitalize text-xs sm:text-base md:text-xl text-[#212121]'>
 						{product.name}
 					</div>
+
 					{/* {product.category && (
 						<div className='text-[#757575] text-base font-semibold'>
 							{product.category}
@@ -47,15 +48,15 @@ export const ProductCard = (props: Props) => {
 						{discountedPrice ? (
 							<>
 								<div className='text-[10px] sm:text-xs md:text-sm line-through font-semibold text-[#616161]'>
-									{price}
+									₹{price}
 								</div>
 								<div className='text-xs sm:text-sm md:text-lg font-semibold text-[#4F1010]'>
-									{discountedPrice}
+									₹{discountedPrice}
 								</div>
 							</>
 						) : (
 							<div className=' text-xs md:text-lg font-semibold text-[#4F1010]'>
-								{price}
+								₹{price}
 							</div>
 						)}
 					</div>

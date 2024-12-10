@@ -32,7 +32,7 @@ export const TitleWithCards = (props: Props) => {
 
 			{items && (
 				<div className='flex flex-col justify-center items-center mt-8 md:mt-16 md:max-w-[45rem] lg:max-w-[50rem] xl:max-w-[76rem]'>
-					<div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-center gap-x-4 gap-y-8 sm:gap-x-8 sm:gap-y-16 w-full'>
+					<div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-start justify-center gap-x-4 gap-y-8 sm:gap-x-8 sm:gap-y-16 w-full'>
 						{isLoading
 							? [1, 2, 3, 4].map((index) => <ProductCardSkeleton key={index} />)
 							: items.map((product: IProduct) => {
